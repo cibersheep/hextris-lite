@@ -481,9 +481,9 @@ function checkGameOver() {
 
 function showHelp() {
     if (gameState == 0) {
-		$('#startBtn').toggle();
+        $('#startBtn').toggle();
     }
-    
+
     if ($('#openSideBar').attr('src') == './images/btn_back.svg') {
         $('#openSideBar').attr('src', './images/btn_help.svg');
         if (gameState != 0 && gameState != -1 && gameState != 2) {
@@ -722,7 +722,7 @@ function easeOutCubic(t, b, c, d) {
 function renderText(x, y, fontSize, color, text, font) {
     ctx.save();
     if (!font) {
-        var font = '20px Exo';
+        var font = 'px Exo';
     }
     fontSize *= settings.scale;
     ctx.font = fontSize + font;
